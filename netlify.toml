@@ -1,2 +1,3 @@
 [[redirects]]
-/*  soup%20kitchen/:splat  200
+  from = "/*"
+  to = "/soup%20kitchen/:splat"
