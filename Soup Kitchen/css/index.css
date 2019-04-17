@@ -188,9 +188,11 @@ p {
 }
 .tabs .tabs-links {
   display: flex;
+  justify-content: center;
   width: 94%;
   margin-left: 19px;
   background-color: lightgray;
+  border-radius: 15px;
 }
 .tabs .tabs-link {
   padding: 10px 25px;
@@ -199,6 +201,7 @@ p {
   border-right: 1px solid white;
   color: black;
   cursor: pointer;
+  border-radius: 10px;
 }
 .tabs .tabs-link:hover {
   background-color: lightgray;
@@ -231,7 +234,7 @@ p {
   width: 47%;
   margin-bottom: 10px;
 }
-@media ( max-width: 500px) {
+@media ( max-width: 650px) {
   .navigation nav {
     width: 75%;
   }
@@ -240,6 +243,21 @@ p {
   color: black;
   text-decoration: none;
   font-size: 15px;
+}
+.small_foot {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+@media ( max-width: 974px) {
+  .small_foot {
+    display: flex;
+  }
 }
 footer {
   color: #22283B;
@@ -251,6 +269,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media ( max-width: 974px) {
+  footer {
+    display: none;
+  }
+}
 .home .intro {
   display: flex;
   flex-wrap: wrap;
@@ -259,7 +282,6 @@ footer {
 .home .intro img {
   width: 94%;
   margin: 20px 2.5%;
-  border-radius: 20px;
   height: 100%;
 }
 .home .intro img {
@@ -280,6 +302,11 @@ footer {
 .home .more_info p {
   margin-top: 13px;
 }
+@media ( max-width: 650px) {
+  .home .more_info {
+    margin-top: 120px;
+  }
+}
 .home .bottom {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -287,7 +314,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media ( max-width: 500px) {
+@media ( max-width: 650px) {
   .home .bottom {
     margin-top: 15px;
     padding: 30px 15px;
@@ -297,7 +324,7 @@ footer {
 .home .bottom .bottom-text {
   width: 50%;
 }
-@media ( max-width: 500px) {
+@media ( max-width: 650px) {
   .home .bottom .bottom-text {
     width: 100%;
     margin-top: 20px;
@@ -329,7 +356,7 @@ footer {
   background-color: white;
   color: #282E39;
 }
-@media ( max-width: 500px) {
+@media ( max-width: 650px) {
   .home .bottom .bottom-text .btn {
     cursor: pointer;
     display: flex;
@@ -355,7 +382,7 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
-@media ( max-width: 500px) {
+@media ( max-width: 650px) {
   .home .bottom .last-img {
     width: 100%;
     margin-left: 0px;
@@ -366,7 +393,7 @@ footer {
   height: auto;
   border-radius: 20px;
 }
-@media ( max-width: 500px) {
+@media ( max-width: 650px) {
   .home .bottom .last-img img {
     width: 100%;
   }
@@ -375,6 +402,9 @@ footer {
   display: block;
   width: 100%;
   line-height: 1.6em;
+  margin-top: 15px;
+  padding-top: 25px;
+  border-top: 1px solid #CCCCCC;
 }
 #about-us #team {
   margin-bottom: 0;
@@ -432,12 +462,25 @@ footer {
   padding: 0 0 20px 0;
   border-bottom: 1px solid #CCCCCC;
 }
+#about-us #statements article h3 {
+  display: none;
+}
 #about-us #statements article blockquote {
   font-style: italic;
   font-weight: bold;
   text-align: justify;
 }
+#about-us #statements article p {
+  margin: 20px 0;
+}
+#about-us #statements article ul {
+  margin: 0 20px;
+}
+#about-us #statements article ul li {
+  font-size: 1.6em;
+}
 #about-us #statements article #skillset {
+  display: none;
   line-height: normal;
 }
 #about-us #statements article #skillset ul {
@@ -519,4 +562,74 @@ footer {
   -webkit-border-radius: 8px;
   -khtml-border-radius: 8px;
   border-radius: 8px;
+}
+.one_half,
+.one_third,
+.two_third,
+.one_quarter,
+.two_quarter,
+.three_quarter,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth {
+  display: inline-block;
+  float: left;
+  margin: 0 0 0 20px;
+  list-style: none;
+}
+.one_third,
+.two_third {
+  margin: 0 0 0 30px;
+}
+.first,
+.one_half:first-child,
+.one_third:first-child,
+.two_third:first-child,
+.one_quarter:first-child,
+.two_quarter:first-child,
+.three_quarter:first-child,
+.one_fifth:first-child,
+.two_fifth:first-child,
+.three_fifth:first-child,
+.four_fifth:first-child {
+  margin-left: 0;
+}
+.two_half,
+.three_third,
+.four_quarter,
+.five_fifth {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.one_half {
+  width: 470px;
+}
+.one_third {
+  width: 300px;
+}
+.two_third {
+  width: 630px;
+}
+.one_quarter {
+  width: 225px;
+}
+.two_quarter {
+  width: 470px;
+}
+.three_quarter {
+  width: 715px;
+}
+.one_fifth {
+  width: 176px;
+}
+.two_fifth {
+  width: 372px;
+}
+.three_fifth {
+  width: 568px;
+}
+.four_fifth {
+  width: 764px;
 }

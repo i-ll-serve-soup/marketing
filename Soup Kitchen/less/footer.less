@@ -1,4 +1,22 @@
 // Footer Styles
+
+.small_foot {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  @media @foot {
+    display: flex;
+    }
+}
+
+ 
+
+
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -8,4 +26,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media @foot {
+    display: none;
+    }
 }
