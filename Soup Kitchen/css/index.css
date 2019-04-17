@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #5E6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   color: #23293B;
 }
 h2 {
@@ -177,6 +177,7 @@ p {
 .tabs .tabs-item .tabs-item-title {
   font-size: 24px;
   font-weight: bold;
+  font-family: "Roboto Slab";
   padding-bottom: 10px;
 }
 .tabs .tabs-item .tabs-item-description {
