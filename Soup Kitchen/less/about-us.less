@@ -5,6 +5,12 @@
   
     #team {
       margin-bottom:0;
+      @media @about {
+        display: flex;
+        width: 45%;
+        justify-content: center;
+        
+      } 
       ul {
         margin:0; padding:0; list-style:none; text-align:center;
         li {
@@ -23,7 +29,7 @@
           };
           li a {
             img {
-  
+              
             };
   
           };
@@ -44,6 +50,10 @@
   
     #statements {
       margin-bottom:0;
+      
+      @media @about {
+        width: 350px;
+      } 
       article {
         margin:30px 0 0 0;
       };
@@ -53,6 +63,10 @@
       article {
         h2 {
           margin:0 0 20px 0; padding:0 0 20px 0; border-bottom:1px solid #CCCCCC;
+          @media @about {
+            font-size: 20px;
+          } 
+          
         };
         h3 {
           display: none;
@@ -62,7 +76,10 @@
           font-style:italic; font-weight:bold; text-align:justify;
         };
         img {
-  
+          @media @about {
+            width: 100%;
+          } 
+          
         };
         
         p {
@@ -204,6 +221,10 @@
 
   .one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter, .one_fifth, .two_fifth, .three_fifth, .four_fifth {
     display:inline-block; float:left; margin:0 0 0 20px; list-style:none;
+    @media @about {
+      margin-left: 0px;
+     
+    } 
   };
 
 .one_third, .two_third {
@@ -212,10 +233,16 @@
 
 .first, .one_half:first-child, .one_third:first-child, .two_third:first-child, .one_quarter:first-child, .two_quarter:first-child, .three_quarter:first-child, .one_fifth:first-child, .two_fifth:first-child, .three_fifth:first-child, .four_fifth:first-child {
   margin-left:0;
+  @media @about {
+    margin-left: 25%;
+   
+  } 
+  
 };
 
 .two_half, .three_third, .four_quarter, .five_fifth {
   display:block; width:100%; clear:both;
+  
 };
 
 .one_half {
