@@ -3,16 +3,61 @@
 .home {
 
   .intro {
-    .display-flex-wrap();
+    position: relative;
+    display:flex-wrap();
     width: 100%; 
+  
 
     img {
-      width: 94%;
-      margin: 20px 2.5%;
+      width: 95%;
+      margin: 10px 0 10px 1%;
       // .round-borders();
       height: 100%;
     }
+    .bottom-left {
+      position: absolute;
+      bottom: 400px;
+      left: 160px;
+      font-size: 50px;
+      h1 {
+        font-weight: 700;
+        color: white;
+      }
+      
+    }
+    .top-left {
+      position: absolute;
+      bottom: 345px;
+      left: 145px;
+      font-size: 50px;
+      h2 {
+        font-weight: 100;
+        color: white;
+        font-size: 25px;
+      }
+    }
+    .top-right {
+      position: absolute;
+      bottom: 275px;
+      left: 165px;
+      font-size: 50px;
+      background-color: #7CB342;
+      border-radius: 10px;
+      a {
+        text-decoration: none;
+        h3 {
+        
+          font-weight: 400;
+          color: white;
+          font-size: 20px;
+          padding: 10px 25px;
+        }
+      }
+      
+    }
   }
+
+
 
   .intro {
     img {
