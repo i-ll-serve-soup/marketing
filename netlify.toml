@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/soup%20kitchen/:splat"
+  status = 200
