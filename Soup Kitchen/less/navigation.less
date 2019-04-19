@@ -4,10 +4,15 @@
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 10px;
     width: 85%;
+    @media @foot {
+      width: 100%;
+      margin: 10px 0 0 0;
+      padding: 30px 15px 0 0;
+    }
 
   }
   
@@ -46,6 +51,9 @@ header {
     margin-left: 17%;
     @media @foot {
         margin-left:0%
+      } 
+    @media @phone {
+      display: none;
       } 
     h1 {
         color: darkgray;
