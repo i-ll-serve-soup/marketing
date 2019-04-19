@@ -164,6 +164,9 @@ p {
   width: 90%;
   margin-left: 10%;
 }
+body {
+  margin-top: 30px;
+}
 .tabs {
   width: 100%;
 }
@@ -475,6 +478,7 @@ footer {
   height: 30px;
   background-color: #282E39;
   color: white;
+  text-decoration: none;
 }
 .home .bottom .bottom-text .btn p {
   font-size: 2rem;
